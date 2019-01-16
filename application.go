@@ -5,4 +5,5 @@ type Application struct {
 	Copies     int          `json:"copies"`
 	Components []*Component `json:"components" binding:"required"`
 	Networks   []string     `json:"networks"`
+	Messages   []string     `json:"messages"`
 }
