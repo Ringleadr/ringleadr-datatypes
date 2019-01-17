@@ -6,6 +6,8 @@ type Component struct {
 	Replicas int               `json:"replicas"`
 	Storage  []*storage        `json:"storage"`
 	Ports    map[string]string `json:"ports"`
+	Env      []string          `json:"env"`
+	Status   string            `json:"status"`
 }
 
 type storage struct {
