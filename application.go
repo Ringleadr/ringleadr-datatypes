@@ -6,4 +6,5 @@ type Application struct {
 	Components []*Component `json:"components" binding:"required"`
 	Networks   []string     `json:"networks"`
 	Messages   []string     `json:"messages"`
+	Node       string       `json:"node"`
 }
