@@ -9,6 +9,8 @@ type Component struct {
 	Env            []string          `json:"env"`
 	Status         string            `json:"status"`
 	ScaleThreshold float64           `json:"scale_threshold"`
+	ScaleMin       int               `json:"scale_min"`
+	ScaleMax       int               `json:"scale_max"`
 }
 
 type storage struct {
