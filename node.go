@@ -7,8 +7,8 @@ type Node struct {
 }
 
 type NodeStats struct {
-	TotalMem   float64 `json:"total_mem"`
-	UsedMem    float64 `json:"used_mem"`
+	TotalMem   uint64  `json:"total_mem"`
+	UsedMem    uint64  `json:"used_mem"`
 	Cpus       int     `json:"cpus"`
 	CpuPercent float64 `json:"cpu_percent"`
 }
