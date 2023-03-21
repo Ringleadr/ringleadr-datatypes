@@ -1,0 +1,21 @@
+version: '3'
+
+tasks:
+  default:
+    - task: lint
+    - task: build
+
+  build:
+    desc: "Build the Ringleadr binary for local arch"
+    cmds:
+      - GOBIN={{.ROOT_DIR}}/build/bin go install -v ./...
+
+  test:
+    desc: "Run all unit tests"
+    cmds:
+      - go test -v ./...
+
+  lint:
+    desc: "Lint the code"
+    cmds:
+      - golangci-lint run
